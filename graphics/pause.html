@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="elements/johannes-countdown/style.css" type="text/css" />-->
+    <!--<script src="/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+  	<script src="/bower_components/PreloadJS/lib/preloadjs-0.6.2.min.js"></script>-->
+    <script
+  src="https://code.jquery.com/jquery-2.1.0.min.js"
+  integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="elements/graphics.css" type="text/css" />
+    <link rel="import" href="elements/johannes-countdown/johannes-countdown.html">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div id="container">
+    <img id="sverok-logga" src="img/sverok.png" />
+    <p>🎉🎬 Streamen startar om...</p>
+    <div id="raknare_container"><johannes-countdown></johannes-countdown></div>
+  </div>
+  <!--
+  <script>
+		window.addEventListener('DOMContentLoaded', () => {
+			TweenLite.to(document.body, 0.333, {
+				opacity: 1,
+				ease: Power1.easeOut
+			});
+		});
+	</script>-->
+
+
+  <script src="js/particles.min.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+	</script>
+</body>
+</html>

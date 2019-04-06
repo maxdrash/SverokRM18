@@ -1,0 +1,88 @@
+{
+  "name": "SverokRM18",
+  "version": "0.0.1",
+  "description": "Dynamic broadcast graphics rendered in a browser",
+  "homepage": "jksoft.se",
+  "author": {
+    "name": "Johannes",
+    "email": "hello@jksoft.se",
+    "url": "jksoft.se"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "sverok",
+    "sverokrm",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~1.1.3",
+    "dashboardPanels": [
+      {
+        "name": "test",
+        "title": "Test",
+        "width": 2,
+        "file": "test.html",
+        "headerColor": "#9f9bbd"
+      },
+      {
+        "name": "tchat",
+        "title": "Twitch Chat",
+        "width": 3,
+        "file": "tchat.html",
+        "headerColor": "#9f9bbd"
+      },
+      {
+        "name": "lowerthird",
+        "title": "Lowerthird",
+        "width": 3,
+        "file": "lowerthird.html",
+        "headerColor": "#9f9bbd"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "file": "pause.html",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "file": "lowerthird.html",
+        "width": 1920,
+        "height": 500
+      }
+    ],
+    "assetCategories": [
+      {
+        "name": "sponsors",
+        "title": "SponsorImgs",
+        "allowedTypes": [
+          "jpg",
+          "jpeg",
+          "gif",
+          "png"
+        ]
+      },
+      {
+        "name": "advertisements",
+        "title": "Ads",
+        "allowedTypes": [
+          "mp4",
+          "webm",
+          "gif",
+          "png"
+        ]
+      }
+    ]
+  },
+  "repository": "/sverokrm"
+}

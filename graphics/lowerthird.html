@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="elements/johannes-lowerthird/style.css" type="text/css" />
+    <script src="/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+  	<script src="/bower_components/PreloadJS/lib/preloadjs.min.js"></script>
+    <link rel="import" href="elements/johannes-lowerthird/johannes-lowerthird.html">
+</head>
+<body>
+  <johannes-lowerthird></johannes-lowerthird>
+
+  <script>
+		window.addEventListener('DOMContentLoaded', () => {
+			TweenLite.to(document.body, 0.333, {
+				opacity: 1,
+				ease: Power1.easeOut
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="/bower_components/iron-list/iron-list.html">
+
+<dom-module id="johannes-lowerthird">
+
+
+    <template>
+        <button on-click="refreshlist">🔄</button><br><br>
+
+
+        <iron-ajax id="ajax" auto url="http://localhost:8000/?url=https://sverok.voteit.se/testa-funktioner-mote/active_list_speakers.json" handle-as="json" last-response="{{ajaxResponse}}"></iron-ajax>
+
+        Talare nu:<br>
+            [[ajaxResponse.active.first_name]] <button on-click="sendtogfx">send to gfx</button>
+
+
+      <br>
+      <p>Kö:
+        <ul>
+          <template is="dom-repeat" items="[[ajaxResponse.queue]]">
+            <li>[{{item.participant_number}}] {{item.first_name}} {{item.last_name}} ({{item.pronoun}})</li>
+          </template>
+        </ul>
+      </p>
+      <br>
+    </template>
+
+
+
+
+
+  <script src="johannes-lowerthird.js"></script>
+</dom-module>
